@@ -1,0 +1,51 @@
+{
+  "type": "message",
+  "speak": "Excellent, {{number_of_people}} u have choose",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "speak": "<s>What date did you want to go?</s>",
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "size": 2,
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Excellent, {{number_of_people}} you have made choice",
+                    "separation": "default"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "Want More ?press \"yes\" else \"NO\"  ",
+                    "separation": "default"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "yes",
+            "data": { "Dish": "" }
+          },
+          {
+            "type": "Action.Submit",
+            "title": "NO",
+            "data": { "date": "" }
+            // "data": { "MealOptions": "" }
+          }
+        ]
+      }
+    }
+  ]
+}

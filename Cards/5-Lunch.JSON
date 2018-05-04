@@ -1,0 +1,29 @@
+{
+  "type": "message",
+  //"text": "Your meal  {{Dish}} at {{subDish}}\n\n ",
+  "speak": "Before we finish up booking, your scuba class comes with a delicious lunch meal!  Please select Beef, Chicken, or Tofu for your protien",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "Almost there...",
+            "size": "large",
+            "weight": "bolder"
+          },
+          {
+            "type": "TextBlock",
+            "text": "Your meal  {{Dish}} at {{subDish}}\n\n ",
+            "size": "normal",
+            "wrap": true
+          }
+         
+        ]
+            }
+    }
+  ]
+}

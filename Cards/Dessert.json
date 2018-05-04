@@ -1,0 +1,156 @@
+﻿{
+  "type": "message",
+  "inputHint": "expectingInput",
+  "speak": "Choose one  {{Dish}} . veg stater, Main course, or Dessert",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "At {{Dish}} ",
+            "wrap": true
+          },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "carrot Halwa",
+                  "price": "10"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\Projects\\ContosoScubaBot-master\\ContosoScuba.Bot\\Images\\carrot_halwa.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "carrot Halwa",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹10",
+                        "wrap": true,
+                        "separation": "none"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          { "$ref": "Dessert.json#" },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "Gulab Jamun",
+                "price": "70"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\Projects\\ContosoScubaBot-master\\ContosoScuba.Bot\\Images\\gulab_jamun.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Gulab Jamun",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹70",
+                        "separation": "none",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "Chocolate icecream",
+                "price": "100"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\Projects\\ContosoScubaBot-master\\ContosoScuba.Bot\\Images\\chocolate_icecream.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Chocolate icecream",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹100",
+                        "separation": "none",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "type": "message",
+  "speak": "Hi! welcome to Bot booking",
+  "text": "Hi!!!!!!!", 
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "size": "auto",
+                "items": [
+                  {
+                    "size": "medium",
+                    "type": "Image",
+                    "url": "E:\\Ashwini\\Projects\\ContosoScubaBot-master\\ContosoScuba.Bot\\Images\\background-of-food-sketches-and-kitchen-objects_23-2147596568.jpg"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Start with something like:",
+                    "size": "large",
+                    "weight": "bolder"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "'view Menu'",
+                    "separation": "none"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "or",
+                    "separation": "none"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "",
+                    "separation": "none"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "You can also 'restart' anytime.",
+                    "separation": "none"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

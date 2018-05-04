@@ -1,0 +1,156 @@
+﻿{
+  "type": "message",
+  "inputHint": "expectingInput",
+  "speak": "Choose one  {{Dish}} . veg stater, Main course, or Dessert",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "At {{Dish}} ",
+            "wrap": true
+          },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "veg biryani",
+                "price": "50"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url":"E:\\Ashwini\\6th_sem_project\\Resturant_Booking\\images\\veg_biryani.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "veg biryani",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹50",
+                        "wrap": true,
+                        "separation": "none"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          { "$ref": "main_courses.json#" },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "Gobi Rice",
+                "price": "90"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\6th_sem_project\\Resturant_Booking\\images\\gobi_rice.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Gobi Rice",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹90",
+                        "separation": "none",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "Fired Rice",
+                "price": "50"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\6th_sem_project\\Resturant_Booking\\images\\fired_rice.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Fired Rice",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹50",
+                        "separation": "none",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

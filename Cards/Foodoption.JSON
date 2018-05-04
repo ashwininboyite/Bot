@@ -1,0 +1,187 @@
+{
+  "type": "message",
+  "inputHint": "expectingInput",
+  "speak": "Please Take a look at menu",
+  "text": "Please Take a look at menu.",
+  "attachmentLayout": "carousel",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "size": "auto",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "size": "auto",
+                        "items": [
+                          {
+                            "type": "Image",
+                            "size": "large",
+                            "url": "E:\\Ashwini\\Projects\\ContosoScubaBot-master\\ContosoScuba.Bot\\Images\\Starter1.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Column",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "text": "veg stater",
+                            "size": "large",
+                            "weight": "bolder"
+                          }
+
+                        ]
+                      }
+                    ]
+                  }
+
+                ]
+              }
+
+            ]
+          }
+
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "This one",
+            "data": {
+              "Dish": "veg stater"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "size": "auto",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "size": "auto",
+                        "items": [
+                          {
+                            "type": "Image",
+                            "size": "large",
+                            "url": "E:\\Ashwini\\Projects\\ContosoScubaBot-master\\ContosoScuba.Bot\\Images\\main_course1.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Column",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "text": "Main course",
+                            "size": "large",
+                            "weight": "bolder"
+                          }
+
+                        ]
+                      }
+                    ]
+                  }
+
+                ]
+              }
+
+            ]
+          }
+
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "This one",
+            "data": {
+              "Dish": "Main course"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "size": "auto",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "size": "auto",
+                        "items": [
+                          {
+                            "type": "Image",
+                            "size": "large",
+                            "url": "E:\\Ashwini\\Projects\\ContosoScubaBot-master\\ContosoScuba.Bot\\Images\\Dessert1.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Column",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "text": "Dessert",
+                            "size": "large",
+                            "weight": "bolder"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+
+                ]
+              }
+
+            ]
+          }
+
+        ],
+
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "This one",
+            "data": {
+              "Dish": "Dessert "
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

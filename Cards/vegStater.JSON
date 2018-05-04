@@ -1,0 +1,156 @@
+﻿{
+  "type": "message",
+  "inputHint": "expectingInput",
+  "speak": "Choose one  {{Dish}} . veg stater, Main course, or Dessert",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "At {{Dish}} ",
+            "wrap": true
+          },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "corn soup",
+                "price": "50"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\6th_sem_project\\Resturant_Booking\\images\\corn_soup.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "corn soup",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹50",
+                        "wrap": true,
+                        "separation": "none"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "panner panadi",
+                "price": "90"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\6th_sem_project\\Resturant_Booking\\images\\kesri-paneer-tikka-13-1460526627.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "panner panadi",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹90",
+                        "separation": "none",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Container",
+            "selectAction": {
+              "type": "Action.Submit",
+              "data": {
+                "subDish": "sizzier",
+                "price": "50"
+              }
+            },
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+
+                    "type": "Column",
+                    "size": "1",
+                    "items": [
+                      {
+                        "type": "Image",
+                        "url": "E:\\Ashwini\\6th_sem_project\\Resturant_Booking\\images\\sizzier.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "size": "3",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "sizzier",
+                        "size": "medium",
+                        "weight": "bolder"
+                      },
+                      {
+                        "type": "TextBlock",
+                        "text": "₹50",
+                        "separation": "none",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
